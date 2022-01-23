@@ -3,6 +3,8 @@
 function search(array, low, high, element) {
   let mid = Math.floor(low + high / 2);
 
+  if (low > high) return -1;
+
   if (array[mid] === element) return mid;
   else if (element > array[mid]) {
     search(array, mid + 1, high, element);
