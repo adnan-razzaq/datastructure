@@ -21,7 +21,6 @@ function searchEff(array, element) {
     let mid = (low + high) / 2;
     if (array[mid] === element) {
       if (mid === array.length - 1 || array[mid] !== array[mid + 1]) {
-        console.log(mid);
         return mid;
       } else {
         low = mid + 1;
@@ -32,10 +31,12 @@ function searchEff(array, element) {
       low = mid + 1;
     }
   }
-  console.log(-1);
+
   return -1;
 }
 
 searchEff([1, 10, 10, 10, 20, 20, 40], 20);
 searchEff([10, 20, 30], 15);
 searchEff([15, 15, 15], 15);
+
+module.exports = { lastOccurance: searchEff };

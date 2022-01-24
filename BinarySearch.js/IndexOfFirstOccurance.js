@@ -24,17 +24,18 @@ const searchEff = (array, element) => {
       //check if mid is 0
       //check if previous value from mid is not same
       if (mid === 0 || array[mid] !== array[mid - 1]) {
-        console.log(mid);
         return mid;
       } else {
         high = mid - 1;
       }
     }
   }
-  console.log(-1);
+
   return -1;
 };
 
 searchEff([1, 10, 10, 10, 20, 20, 40], 20);
 searchEff([10, 20, 30], 15);
 searchEff([15, 15, 15], 15);
+
+module.exports = { firstOccurance: searchEff };
