@@ -6,11 +6,13 @@ function search(array, low, high, element) {
   if (low > high) return -1;
 
   if (array[mid] === element) return mid;
-  else if (element > array[mid]) {
-    search(array, mid + 1, high, element);
+  else if (array[mid] > element) {
+    return search(array, low, high - 1, element);
   } else {
-    search(array, low, mid - 1, element);
+    return search(array, mid + 1, high, element);
   }
 }
 
 search([20, 30, 40, 50, 60], 0, 4, 40);
+
+module.exports = { binarySearch: search };
