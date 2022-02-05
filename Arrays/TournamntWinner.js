@@ -1,3 +1,6 @@
+/* The idea here is to use an object and track the number
+within object and in end return maximum 
+*/
 function tournamentWinner(competitions, results) {
   // Write your code here.
   let data = {};
