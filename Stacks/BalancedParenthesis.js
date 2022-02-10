@@ -13,8 +13,6 @@ function search(str) {
       (str[i] === ")" && stack[stack.length - 1] === "(")
     ) {
       stack.pop();
-    } else {
-      return false;
     }
   }
 
@@ -26,4 +24,4 @@ console.log(search("([])"));
 console.log(search("((())"));
 console.log(search("([)]"));
 console.log(search("{}([()])"));
-console.log(search("((())"));
+console.log(search("(a)"));
