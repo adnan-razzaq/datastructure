@@ -5,9 +5,9 @@ function reverse(str) {
     revstr += str[i];
   }
   if (str === revstr) {
-    console.log("Palindrome");
+    return true;
   } else {
-    console.log("Not a palindrome");
+    return false;
   }
 }
 
@@ -22,10 +22,10 @@ function reverseEff(string) {
       start++;
       end--;
     } else {
-      return "Not a palindrom";
+      return false;
     }
   }
-  return "it is a palindrome";
+  return true;
 }
 
 console.log(reverseEff("ABBA"));
