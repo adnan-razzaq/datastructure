@@ -1,6 +1,7 @@
 function caesarCipherEncryptor(string, key) {
   // Write your code here.
   let str = "";
+  key = key % 26;
   for (let i = 0; i < string.length; i++) {
     let cipher = string.charCodeAt(i) + key;
     if (cipher <= 122) {
