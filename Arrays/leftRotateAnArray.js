@@ -1,16 +1,16 @@
 /**
- * @param  {} array
+ * @param  {Number} array
  * Accepts an array as parameter
- * left rotate an aray by one
+ * left rotate an arRay by one
  *
  */
 function leftRotateArrayByOne(array) {
-  let last = array[0];
+    let last = array[0];
 
-  for (let i = 0; i < array.length; i++) {
-    array[i] = array[i + 1];
-  }
-  array[array.length - 1] = last;
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i + 1];
+    }
+    array[array.length - 1] = last;
 }
 
 /**
@@ -22,25 +22,25 @@ function leftRotateArrayByOne(array) {
  *
  */
 function leftRotateAnArrayDtimes(array, d) {
-  for (let i = 0; i < d; i++) {
-    leftRotateArrayByOne(array);
-  }
+    for (let i = 0; i < d; i++) {
+        leftRotateArrayByOne(array);
+    }
 }
 /**
  * @param  {Array[Number]} array
  * @param  {Number} d
  */
 function leftRotaAnArrDtimEfficient(array, d) {
-  //take slice from array
-  let arraySlice = array.slice(0, d);
-  for (let i = 0; i < array.length; i++) {
-    array[i] = array[i + d];
-  }
+    //take slice from array
+    let arraySlice = array.slice(0, d);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i + d];
+    }
 
-  for (let i = 0; i < arraySlice.length; i++) {
-    array[array.length - d + i] = arraySlice[i];
-  }
-  console.log(array);
+    for (let i = 0; i < arraySlice.length; i++) {
+        array[array.length - d + i] = arraySlice[i];
+    }
+    console.log(array);
 }
 
 leftRotaAnArrDtimEfficient([10, 5, 30, 15], 3);
