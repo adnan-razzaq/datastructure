@@ -19,7 +19,7 @@ sortedSquaredArray([1, 2, 3, 5, 6, 8, 9]);
 2- Create a new array of equal size
 2- Loop through array in reverse and Compare absolute values of start and end.
 3- If end value is large then Calculate the square of bigger value and move it to end of new array and
-increment end.
+decrement end.
 4- If start value is large then move value at start to end of array and increment start
 */
 /**
