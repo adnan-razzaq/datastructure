@@ -32,7 +32,7 @@ function smallestDifference(arrayOne, arrayTwo) {
         } else {
             arrTwoIdx++;
         }
-        // Comparing with smallest
+        // track of smallest difference and currentPair
         if (smallest > current) {
             smallest = current;
             smallestPair = [firstNumber, secondNumber];
