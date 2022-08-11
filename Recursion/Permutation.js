@@ -6,17 +6,16 @@ function getPermutations(array) {
 }
 
 function generatePermutation(i, array, permutations) {
-  //base case
-
-  if (i === array.length - 1) {
-    permutations.push(array.slice());
-  } else {
-    for (let j = i; j < array.length; j++) {
-      swap(i, j, array);
-      generatePermutation(i + 1, array, permutations);
-      swap(i, j, array);
+    //base case
+    if (i === array.length - 1) {
+        permutations.push(array.slice());
+    } else {
+        for (let j = i; j < array.length; j++) {
+            swap(i, j, array);
+            generatePermutation(i + 1, array, permutations);
+            swap(i, j, array);
+        }
     }
-  }
 }
 
 function swap(i, j, array) {
