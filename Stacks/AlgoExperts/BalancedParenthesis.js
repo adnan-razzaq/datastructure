@@ -23,7 +23,7 @@ Sample Output
 4b If stack is not empty then compare the top of stack with current element matching pair.
 5 If top of stack and matchingPair[char] are equal then pop from stack
 6 If top of stack is not equal matchingPair[char] then return false
-7 I the end check the length of stack if is empty return true. 
+7 In the end check the length of stack if is empty return true. 
 
 */
 function balancedBrackets(string) {
