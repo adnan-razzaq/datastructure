@@ -1,3 +1,12 @@
+// Return maximum number in which you can cut a rope
+
+/* 
+! Description
+1 Try out all pieces one by one recursively.
+2 Identify the base cases.
+3 If all pieces return -1 then there is no solution return -1
+4 else return pieces+1
+*/
 function NumberOfCuts(ropeLength, option1, option2, option3) {
     //base cases
     if (ropeLength === 0) return 0;

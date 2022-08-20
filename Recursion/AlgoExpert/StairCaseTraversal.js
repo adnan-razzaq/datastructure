@@ -1,3 +1,12 @@
+/* 
+!Description
+1 The approach is to use recursion
+2 Num of ways to reach at top would be sum of last two values if maxSteps 
+is two
+3 The base case would if n<=0 return 1
+4 Generalize case would be ways=numberOfWays(n-1)+numberOfWays(n-2)....
+*/
+
 // Time O(n^2)
 // Space O(n)
 function numberOfWays(height, maxstep) {
@@ -7,6 +16,7 @@ function numberOfWays(height, maxstep) {
     //recursive call
 
     let numberofways = 0;
+    // minimum when height is smaller than maxsteps
     for (let i = 1; i <= Math.min(height, maxstep); i++) {
         numberofways += numberOfWays(height - i, maxstep);
     }
