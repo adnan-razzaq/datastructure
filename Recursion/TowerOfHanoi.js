@@ -1,5 +1,9 @@
 /* 
 The logic here is to use recursion.Try to solve problem for n-1 disks
+Initially use position3 as auxilary position
+Move disc from 1 to 3
+use position 1 as auxilary 
+
 */
 /**
  * @param  {number} noOfDisks - Total number of Disks
