@@ -1,6 +1,8 @@
 /**
  * Removes Duplicates from sorted array of numbers
  * Naive approach is to use a auxiliary array and move different elements to array
+ * Time O(N)
+ * Space O(N)
  * @param  {Number} array
  */
 function RemoveDuplicates(array) {
@@ -19,6 +21,14 @@ function RemoveDuplicates(array) {
 
 console.log(RemoveDuplicates([10, 20, 30, 30, 40]));
 
+/* 
+!APPROACH
+1 Initialze the result=1.
+2 Loop over the array and compare the current with previous and then update
+if numbers are not equal.
+3 Increment the result
+4 return the array
+*/
 function EfficientRemoveDuplicates(array) {
     let result = 1;
     for (let index = 1; index < array.length; index++) {

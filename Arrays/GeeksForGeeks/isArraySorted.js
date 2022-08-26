@@ -12,6 +12,12 @@ function isArraySorted(array) {
     return sorted;
 }
 
+/* 
+!Description 
+1 Loop through each element and check whether current element is smaller
+than previous then return false
+2 else return true
+ */
 function EfficientIsArraySorted(array) {
     for (let index = 1; index < array.length; index++) {
         if (array[index] < array[index - 1]) return false;

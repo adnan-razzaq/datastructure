@@ -2,6 +2,7 @@
  * Moves zeros to end of Array
  * The approach is to traverse through each element and find first zero element
  * Then move right to first zero element and find non zero element and swap them
+ * Time Complexity is O(n^2)
  * @param  {Number} array
  */
 function MoveZerostoEnd(array) {
@@ -26,6 +27,10 @@ console.log(MoveZerostoEnd([8, 5, 0, 10, 20, 0, 2]));
 console.log(MoveZerostoEnd([0, 0, 0, 0, 10, 0, 0]));
 /**
  * Keep track of non-zero elements and look for them in array
+ * if you found a non zero element then swap it with current count of non 
+ * zero element
+ * 
+ * Time O(n)
  * @param  {} array
  */
 function EfficientMoveZerosToEnd(array) {

@@ -4,7 +4,13 @@
  *
  */
 
-// Maintain two indexes low and high and swap the values
+/* 
+! Description
+1  Maintain two indexes low and high and swap the values until low is
+smaller than high
+2 Return array in end
+
+*/
 function reverse(array) {
     let low = 0,
         high = array.length - 1;
