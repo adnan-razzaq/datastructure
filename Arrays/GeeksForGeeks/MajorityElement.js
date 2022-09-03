@@ -7,7 +7,7 @@ const MajorityElement = (array) => {
 
   for (let i = 0; i < array.length; i++) {
     let current = 1;
-    for (let j = i + 1; j < array.length; j++) {
+    for (let j = 0; j < array.length; j++) {
       if (array[i] === array[j]) {
         current++;
       }
@@ -20,7 +20,18 @@ const MajorityElement = (array) => {
   return result;
 };
 
-//An efficient approach based on Buyers Morres Algorithm
+//An efficient approach based on Buyers Mooreys  Voting Algorithm
+/* 
+!DESCRIPTION
+1 Maintain a count and keep track of majority element.
+2 Algorithm has two phases. First phase is to find index of majority.
+3 Second phase checks whether element identified is indeed a majority.
+4 Initially consider element at index 0 as majority and count as 1.
+5 Loop through element and check whether element is same as majority then
+increment count else decrement count.
+6 if count is zero rest majority and count.
+
+*/
 function MajorityElementEff(array) {
   let result = 0;
   let count = 1;
