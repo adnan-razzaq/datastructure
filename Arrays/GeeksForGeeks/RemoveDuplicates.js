@@ -23,7 +23,7 @@ console.log(RemoveDuplicates([10, 20, 30, 30, 40]));
 
 /* 
 !APPROACH
-1 Initialze the result=1.
+1 Initialize the result=1.
 2 Loop over the array and compare the current with previous and then update
 if numbers are not equal.
 3 Increment the result

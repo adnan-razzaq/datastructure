@@ -1,11 +1,11 @@
 // Maximum Difference Problem with order
 /**
  * @param  {} array
- *  A function to getthe maxmium difference from an array array[j]-array[i] where j>i
+ *  A function to get the maximum difference from an array array[j]-array[i] where j>i
  * A brute force approach
  * 
  * Approach
- * 1 Intilaize the maxDifference as array[1]-array[0]
+ * 1 Initialize the maxDifference as array[1]-array[0]
  * 2 Loop through each element and compare with maxDifference.
  */
 const MaxDifference = (array) => {
@@ -23,13 +23,13 @@ const MaxDifference = (array) => {
   return diff;
 };
 
-//An Efficient approach to calcualte  maximum difference
+//An Efficient approach to calculate  maximum difference
 /* 
 !Description
 1 Initialize the maxDifference as array[1] -array[0]
 2 Keep track of minValue. Initialize minValue with value at index 0
-3 Loop through each element and and calcute the newDiffrence.
-4 maxDiffernce=Math.max(maxDifference,newDifference)
+3 Loop through each element and and calculate the newDifference.
+4 maxDifference=Math.max(maxDifference,newDifference)
 5 MinValue=Math.min(minValue, array[i])
 6 return maxDifference
 */

@@ -16,6 +16,7 @@ function MoveZerostoEnd(array) {
                     let temp = array[index];
                     array[index] = array[j];
                     array[j] = temp;
+                    break;
                 }
             }
         }
@@ -24,6 +25,7 @@ function MoveZerostoEnd(array) {
 }
 
 console.log(MoveZerostoEnd([8, 5, 0, 10, 20, 0, 2]));
+console.log(MoveZerostoEnd([0, 0, 0, 10, 20, 0, 2]));
 console.log(MoveZerostoEnd([0, 0, 0, 0, 10, 0, 0]));
 /**
  * Keep track of non-zero elements and look for them in array
@@ -46,5 +48,5 @@ function EfficientMoveZerosToEnd(array) {
     return array;
 }
 
-console.log(EfficientMoveZerosToEnd([8, 5, 0, 10, 20, 0, 2]));
-console.log(EfficientMoveZerosToEnd([0, 0, 0, 0, 10, 0, 0]));
+/* console.log(EfficientMoveZerosToEnd([8, 5, 0, 10, 20, 0, 2]));
+console.log(EfficientMoveZerosToEnd([0, 0, 0, 0, 10, 0, 0])); */

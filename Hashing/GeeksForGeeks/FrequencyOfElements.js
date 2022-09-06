@@ -4,7 +4,7 @@
 3 When elements are different. Print the element and frequency.
 4 Reset the frequency to 1
 */
-function frequecny(array) {
+function frequency(array) {
     for (let i = 0; i < array.length; i++) {
         let element = array[i];
         let count = 0;
@@ -16,6 +16,7 @@ function frequecny(array) {
         console.log(element, count);
     }
 }
+
 
 /*  Use hash table */
 function frequencyEff(array) {

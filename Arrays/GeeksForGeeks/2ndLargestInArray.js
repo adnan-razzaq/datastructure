@@ -2,11 +2,11 @@ const { largest } = require("./LargestinArray.js");
 /* 
 !DESCRIPTION
 1 Find largest element in array.
-2 intialize secondLargestIndex as -1.
+2 Initialize secondLargestIndex as -1.
 3 loop through array and check all elements except the largest.
 4 Initially if 2ndLargest is -1 then update its value to currentIndex
 in first iteration.
-5 After that compare every current with secondlargest.
+5 After that compare every current with second largest.
 */
 function SecondLargest(array) {
     let largestIndex = largest(array);

@@ -36,16 +36,16 @@ function MajorityElementEff(array) {
   let result = 0;
   let count = 1;
   //find a candidate
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === array[result]) {
-      count++;
-    } else {
-      count--;
-    }
-    if (count === 0) {
-      result = i;
-      count = 1;
-    }
+  for (let i = 1; i < array.length; i++) {
+      if (array[i] === array[result]) {
+          count++;
+      } else {
+          count--;
+      }
+      if (count === 0) {
+          result = i;
+          count = 1;
+      }
   }
   //check if the candidate is actually a majority
   count = 0;
