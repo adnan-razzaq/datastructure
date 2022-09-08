@@ -32,3 +32,21 @@ function moveElementToEnd(array, toMove) {
 }
 
 moveElementToEnd([2, 4, 2, 5, 6, 2, 2], 2);
+
+
+function toMoveend(array, toMove) {
+    let count = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] !== toMove) {
+            let temp = array[count];
+            array[count] = array[i];
+            array[i] = temp;
+            count++;
+        }
+    }
+    console.log(array);
+    return array;
+}
+
+toMoveend([2, 4, 2, 5, 6, 2, 2], 2);

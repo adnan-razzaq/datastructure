@@ -29,8 +29,9 @@ function tournamentWinner(competitions, results) {
     }
     // get value with max
     let max = Object.keys(scores).reduce((prev, curr) => {
-        return scores[curr] > scores[prev] ? curr : acc;
+        return scores[curr] > scores[prev] ? curr : prev;
     });
+
     return max;
 }
 
@@ -40,7 +41,7 @@ tournamentWinner(
         ["C#", "Python"],
         ["Python", "HTML"],
     ],
-    [0, 0, 1]
+    [0, 1, 1]
 );
 
 /*
@@ -75,6 +76,8 @@ function tournamentWinnerEff(competitions, results) {
             if (data[home] > data[CurrentBestTeam]) CurrentBestTeam = home;
         }
     }
+    console.log(data);
+    console.log(CurrentBestTeam);
     return CurrentBestTeam;
 }
 
