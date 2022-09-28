@@ -9,6 +9,12 @@ Write a function that returns the youngest common ancestor to the two descendant
 Note that a descendant is considered its own ancestor . So in the simple ancestral tree
 below , the youngest common ancestor to nodes A and B is node A. */
 
+/* 
+!APPROACH
+1 Calculate depths of both descendants.
+2 If one of descendants is deeper iterate up through it until depths are equal.
+3 Then iterate through both descendants until you find the common.
+*/
 // This is an input class. Do not edit.
 class AncestralTree {
     constructor(name) {

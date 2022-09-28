@@ -11,6 +11,16 @@ Write a function that returns an array of the sizes of all rivers represented in
 matrix . The sizes don't need to be in any particular order .
 */
 
+/* 
+!Approach
+1 Keep track of visited nodes. Make a matrix with booleans.
+2 Get the current node and check whether it is VISITED. If  not visited traverse it using
+BreathFirstSearch iteratively.
+3 Check if node is already visited.
+4 if Not mark it as visited in bool matrix and increment current River Size.
+5 Check if current node is 0 then ignore.
+6 Get neighbors of current node(up,down,left,right)
+*/
 function riverSizes(matrix) {
     // Write your code here.
     let sizes = [];
